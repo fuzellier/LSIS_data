@@ -37,7 +37,7 @@ for i in os.listdir('data/')[:-2]: # skipping fixed & raw folders
                     'data/' + year + '/' + str((en_months.index(en_m) + 1)) + '_' + year + "_" + en_m.lower() + '.xml'
                 )
 
-                filename = '/' + str((en_months.index(en_m) + 1)) + '_' + year + "_" + en_m.lower() + '.xml'
+                filename = str((en_months.index(en_m) + 1)) + '_' + year + "_" + en_m.lower() + '.xml'
         
         # Filling list of paths for each XML file in each folder
         if filename.endswith(".xml"): 
